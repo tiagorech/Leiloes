@@ -31,7 +31,7 @@ public class ProdutosDAO {
             
             prep = conn.prepareStatement(sql);
             prep.setString(1, produto.getNome());
-            prep.setInt(1, produto.getValor());
+            prep.setInt(2, produto.getValor());
             prep.setString(3, produto.getStatus());
             
             prep.execute();
