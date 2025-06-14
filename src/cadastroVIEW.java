@@ -184,7 +184,10 @@ public class cadastroVIEW extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(cadastroVIEW.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            new cadastroVIEW().setVisible(true);
+        });
+      
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
